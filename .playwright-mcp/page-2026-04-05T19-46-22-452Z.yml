@@ -1,0 +1,240 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]:
+          - heading "AI Page Manager" [level=1] [ref=e9]
+          - paragraph [ref=e10]: مدير الصفحة الذكي
+      - navigation [ref=e11]:
+        - link "لوحة التحكم" [ref=e12] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e13]
+          - generic [ref=e18]: لوحة التحكم
+        - link "العملاء المحتملين" [ref=e19] [cursor=pointer]:
+          - /url: /dashboard/leads
+          - img [ref=e20]
+          - generic [ref=e25]: العملاء المحتملين
+        - link "المحادثات" [ref=e26] [cursor=pointer]:
+          - /url: /dashboard/conversations
+          - img [ref=e27]
+          - generic [ref=e29]: المحادثات
+        - link "الإحصائيات" [ref=e30] [cursor=pointer]:
+          - /url: /dashboard/analytics
+          - img [ref=e31]
+          - generic [ref=e33]: الإحصائيات
+        - link "الإعدادات" [ref=e34] [cursor=pointer]:
+          - /url: /dashboard/settings
+          - img [ref=e35]
+          - generic [ref=e38]: الإعدادات
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - img [ref=e42]
+            - generic [ref=e45]: 3 leads جدد
+          - paragraph [ref=e46]: آخر ساعتين
+        - button "طي القائمة" [ref=e47]:
+          - img [ref=e48]
+          - generic [ref=e50]: طي القائمة
+        - generic [ref=e51]:
+          - generic [ref=e52]: أ
+          - generic [ref=e53]:
+            - paragraph [ref=e54]: أحمد الشاعر
+            - paragraph [ref=e55]: أكاديمية الجمباز
+          - button "تسجيل الخروج" [ref=e56]:
+            - img [ref=e57]
+    - main [ref=e60]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - heading "الإحصائيات والتحليلات" [level=1] [ref=e64]:
+            - img [ref=e65]
+            - text: الإحصائيات والتحليلات
+          - paragraph [ref=e67]: تحليل شامل لأداء المدير الذكي
+        - generic [ref=e68]:
+          - generic [ref=e70]:
+            - img [ref=e72]
+            - generic [ref=e74]:
+              - paragraph [ref=e75]: إجمالي الردود (7 أيام)
+              - paragraph [ref=e76]: "284"
+          - generic [ref=e78]:
+            - img [ref=e80]
+            - generic [ref=e84]:
+              - paragraph [ref=e85]: إجمالي الـ Leads (7 أيام)
+              - paragraph [ref=e86]: "58"
+          - generic [ref=e88]:
+            - img [ref=e90]
+            - generic [ref=e93]:
+              - paragraph [ref=e94]: معدل التحويل (الشهر)
+              - paragraph [ref=e95]: 52%
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - heading "تطور العملاء المحتملين" [level=3] [ref=e98]
+            - paragraph [ref=e99]: الـ Leads مقابل المحولين (شهرياً)
+            - generic [ref=e102]:
+              - list [ref=e104]:
+                - listitem [ref=e105]:
+                  - img "تم التحويل legend icon" [ref=e106]
+                  - text: تم التحويل
+                - listitem [ref=e108]:
+                  - img "عملاء محتملين legend icon" [ref=e109]
+                  - text: عملاء محتملين
+              - application [ref=e111]:
+                - generic [ref=e116]:
+                  - generic [ref=e117]:
+                    - generic [ref=e119]: الأسبوع 1
+                    - generic [ref=e121]: الأسبوع 2
+                    - generic [ref=e123]: الأسبوع 3
+                    - generic [ref=e125]: الأسبوع 4
+                  - generic [ref=e126]:
+                    - generic [ref=e128]: "0"
+                    - generic [ref=e130]: "15"
+                    - generic [ref=e132]: "30"
+                    - generic [ref=e134]: "45"
+                    - generic [ref=e136]: "60"
+          - generic [ref=e137]:
+            - heading "مصادر العملاء" [level=3] [ref=e138]
+            - paragraph [ref=e139]: نسبة كل مصدر من إجمالي الـ Leads
+            - generic [ref=e140]:
+              - application [ref=e144]
+              - generic [ref=e145]:
+                - generic [ref=e148]:
+                  - paragraph [ref=e149]: كومنتات
+                  - paragraph [ref=e150]: 45%
+                - generic [ref=e153]:
+                  - paragraph [ref=e154]: ماسنجر
+                  - paragraph [ref=e155]: 38%
+                - generic [ref=e158]:
+                  - paragraph [ref=e159]: انستجرام
+                  - paragraph [ref=e160]: 17%
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - img [ref=e164]
+              - heading "استخدام نماذج الـ AI" [level=3] [ref=e167]
+            - paragraph [ref=e168]: Gemini مقابل OpenRouter (7 أيام)
+            - generic [ref=e171]:
+              - list [ref=e173]:
+                - listitem [ref=e174]:
+                  - img "Gemini 2.5 Flash legend icon" [ref=e175]
+                  - text: Gemini 2.5 Flash
+                - listitem [ref=e177]:
+                  - img "OpenRouter (Llama) legend icon" [ref=e178]
+                  - text: OpenRouter (Llama)
+              - application [ref=e180]:
+                - generic [ref=e198]:
+                  - generic [ref=e199]:
+                    - generic [ref=e201]: السبت
+                    - generic [ref=e203]: الأحد
+                    - generic [ref=e205]: الاثنين
+                    - generic [ref=e207]: الثلاثاء
+                    - generic [ref=e209]: الأربعاء
+                    - generic [ref=e211]: الخميس
+                    - generic [ref=e213]: الجمعة
+                  - generic [ref=e214]:
+                    - generic [ref=e216]: "0"
+                    - generic [ref=e218]: "15"
+                    - generic [ref=e220]: "30"
+                    - generic [ref=e222]: "45"
+                    - generic [ref=e224]: "60"
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - img [ref=e227]
+              - heading "سرعة الرد (بالدقيقة)" [level=3] [ref=e230]
+            - paragraph [ref=e231]: متوسط وقت الرد حسب الساعة
+            - application [ref=e235]:
+              - generic [ref=e254]:
+                - generic [ref=e255]:
+                  - generic [ref=e257]: 8 ص
+                  - generic [ref=e259]: 10 ص
+                  - generic [ref=e261]: 12 م
+                  - generic [ref=e263]: 2 م
+                  - generic [ref=e265]: 4 م
+                  - generic [ref=e267]: 6 م
+                  - generic [ref=e269]: 8 م
+                  - generic [ref=e271]: 10 م
+                - generic [ref=e272]:
+                  - generic [ref=e274]: 0 د
+                  - generic [ref=e276]: 0.55 د
+                  - generic [ref=e278]: 1.1 د
+                  - generic [ref=e280]: 1.65 د
+                  - generic [ref=e282]: 2.2 د
+        - generic [ref=e283]:
+          - heading "سجل النشاط" [level=3] [ref=e284]
+          - table [ref=e286]:
+            - rowgroup [ref=e287]:
+              - row "الحدث المنصة المستخدم النموذج التوكنز الوقت" [ref=e288]:
+                - columnheader "الحدث" [ref=e289]
+                - columnheader "المنصة" [ref=e290]
+                - columnheader "المستخدم" [ref=e291]
+                - columnheader "النموذج" [ref=e292]
+                - columnheader "التوكنز" [ref=e293]
+                - columnheader "الوقت" [ref=e294]
+            - rowgroup [ref=e295]:
+              - row "رد كومنت Facebook أحمد محمود gemini-2.5-flash 245 2:38 م" [ref=e296]:
+                - cell "رد كومنت" [ref=e297]:
+                  - generic [ref=e298]: رد كومنت
+                - cell "Facebook" [ref=e299]
+                - cell "أحمد محمود" [ref=e300]
+                - cell "gemini-2.5-flash" [ref=e301]
+                - cell "245" [ref=e302]
+                - cell "2:38 م" [ref=e303]
+              - row "Lead جديد Facebook أحمد محمود gemini-2.5-flash — 2:38 م" [ref=e304]:
+                - cell "Lead جديد" [ref=e305]:
+                  - generic [ref=e306]: Lead جديد
+                - cell "Facebook" [ref=e307]
+                - cell "أحمد محمود" [ref=e308]
+                - cell "gemini-2.5-flash" [ref=e309]
+                - cell "—" [ref=e310]
+                - cell "2:38 م" [ref=e311]
+              - row "رد رسالة Messenger سارة عبدالله gemini-2.5-flash 312 1:22 م" [ref=e312]:
+                - cell "رد رسالة" [ref=e313]:
+                  - generic [ref=e314]: رد رسالة
+                - cell "Messenger" [ref=e315]
+                - cell "سارة عبدالله" [ref=e316]
+                - cell "gemini-2.5-flash" [ref=e317]
+                - cell "312" [ref=e318]
+                - cell "1:22 م" [ref=e319]
+              - row "رد كومنت Facebook محمد حسن gemini-2.5-flash 198 12:00 م" [ref=e320]:
+                - cell "رد كومنت" [ref=e321]:
+                  - generic [ref=e322]: رد كومنت
+                - cell "Facebook" [ref=e323]
+                - cell "محمد حسن" [ref=e324]
+                - cell "gemini-2.5-flash" [ref=e325]
+                - cell "198" [ref=e326]
+                - cell "12:00 م" [ref=e327]
+              - row "رد رسالة Messenger نورهان أحمد gemini-2.5-flash 287 6:50 م" [ref=e328]:
+                - cell "رد رسالة" [ref=e329]:
+                  - generic [ref=e330]: رد رسالة
+                - cell "Messenger" [ref=e331]
+                - cell "نورهان أحمد" [ref=e332]
+                - cell "gemini-2.5-flash" [ref=e333]
+                - cell "287" [ref=e334]
+                - cell "6:50 م" [ref=e335]
+              - row "Lead جديد Messenger نورهان أحمد gemini-2.5-flash — 6:50 م" [ref=e336]:
+                - cell "Lead جديد" [ref=e337]:
+                  - generic [ref=e338]: Lead جديد
+                - cell "Messenger" [ref=e339]
+                - cell "نورهان أحمد" [ref=e340]
+                - cell "gemini-2.5-flash" [ref=e341]
+                - cell "—" [ref=e342]
+                - cell "6:50 م" [ref=e343]
+              - row "رد رسالة Instagram كريم وليد llama-3.3-70b 178 4:20 م" [ref=e344]:
+                - cell "رد رسالة" [ref=e345]:
+                  - generic [ref=e346]: رد رسالة
+                - cell "Instagram" [ref=e347]
+                - cell "كريم وليد" [ref=e348]
+                - cell "llama-3.3-70b" [ref=e349]
+                - cell "178" [ref=e350]
+                - cell "4:20 م" [ref=e351]
+              - row "رد كومنت Facebook فاطمة علي gemini-2.5-flash 220 2:10 م" [ref=e352]:
+                - cell "رد كومنت" [ref=e353]:
+                  - generic [ref=e354]: رد كومنت
+                - cell "Facebook" [ref=e355]
+                - cell "فاطمة علي" [ref=e356]
+                - cell "gemini-2.5-flash" [ref=e357]
+                - cell "220" [ref=e358]
+                - cell "2:10 م" [ref=e359]
+  - button "Open Next.js Dev Tools" [ref=e365] [cursor=pointer]:
+    - img [ref=e366]
+  - alert [ref=e369]
+  - generic [ref=e370]: "0.55"

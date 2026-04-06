@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__d52cc9e6-957d-4071-a716-122087ebf5af__get_sdk_reference",
+      "mcp__d52cc9e6-957d-4071-a716-122087ebf5af__get_workflow_details",
+      "mcp__d52cc9e6-957d-4071-a716-122087ebf5af__search_nodes",
+      "mcp__d52cc9e6-957d-4071-a716-122087ebf5af__get_node_types",
+      "mcp__d52cc9e6-957d-4071-a716-122087ebf5af__update_workflow",
+      "mcp__d52cc9e6-957d-4071-a716-122087ebf5af__search_workflows",
+      "mcp__d52cc9e6-957d-4071-a716-122087ebf5af__publish_workflow"
+    ]
+  }
+}
