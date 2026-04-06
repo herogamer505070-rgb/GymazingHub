@@ -1,12 +1,14 @@
-import { createServerClient } from '@supabase/ssr';
-import { cookies } from 'next/headers';
+import { createServerClient } from "@supabase/ssr";
+import { cookies } from "next/headers";
 
 export async function createSupabaseServerClient() {
   const cookieStore = await cookies();
 
   return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    process.env.NEXT_PUBLIC_SUPABASE_URL ||
+      "https://txjelclkegfbrzqlcrml.supabase.co",
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR4amVsY2xrZWdmYnJ6cWxjcm1sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU0MDU1ODQsImV4cCI6MjA5MDk4MTU4NH0.w9i_9l_T-iSYO7GMi7Wp0IDr5NXPC5szcY0T8vMb9K0",
     {
       cookies: {
         getAll() {
