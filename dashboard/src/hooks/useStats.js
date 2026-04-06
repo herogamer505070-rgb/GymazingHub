@@ -63,10 +63,10 @@ export function useStats(businessId) {
       leadsYesterday: (leadsYesterday || []).length,
       repliesToday: (repliesToday || []).length,
       repliesYesterday: (repliesYesterday || []).length,
-      avgLeadScore: parseFloat(avgToday) || 7.4,
-      avgLeadScoreYesterday: parseFloat(avgYesterday) || 6.9,
-      avgResponseTime: "1.2 دقيقة",
-      avgResponseTimeYesterday: "2.1 دقيقة",
+      avgLeadScore: parseFloat(avgToday) || 0,
+      avgLeadScoreYesterday: parseFloat(avgYesterday) || 0,
+      avgResponseTime: "0 دقيقة",
+      avgResponseTimeYesterday: "0 دقيقة",
     });
 
     // Weekly activity — last 7 days

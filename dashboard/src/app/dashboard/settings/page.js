@@ -41,6 +41,8 @@ export default function SettingsPage() {
   const [testQuery, setTestQuery] = useState("");
   const [testResult, setTestResult] = useState(null);
   const [saved, setSaved] = useState(false);
+  const [whatsappNumber, setWhatsappNumber] = useState("");
+  const [pageId, setPageId] = useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -56,6 +58,8 @@ export default function SettingsPage() {
         setBusinessName(data.name);
         setTone(data.tone_instructions || "");
         setKb(data.knowledge_base || {});
+        setWhatsappNumber(data.whatsapp_number || "غير مسجل");
+        setPageId(data.page_id || "غير متصل");
       }
       setLoading(false);
     }
@@ -73,11 +77,17 @@ export default function SettingsPage() {
   };
 
   const handleTest = () => {
+    if (!testQuery) return;
+    
+    // Simulating AI response using KB and Tone
+    const hasFreeTrial = kb?.faq?.find(f => f.q.includes("تجربة") || f.q.includes("مجاني"));
+    const price = kb?.pricing?.[0]?.price || "800";
+    
     setTestResult({
-      reply: "أهلاً! 🤸 أول حصة تجريبية عندنا مجانية تماماً! ابنك عنده كام سنة عشان نرشحلك المجموعة المناسبة؟ 😊",
-      model: "gemini-2.5-flash",
-      tokens: 85,
-      time: "1.1 ثانية",
+      reply: `أهلاً بك في ${businessName}! بخصوص سؤالك "${testQuery}": ${hasFreeTrial ? "أيوة بنقدم حصة تجريبية مجانية." : ""} والاشتراكات عندنا بتبدأ من ${price} جنيه. حابب تعرف مواعيد السن ده؟`,
+      model: "google/gemini-flash-1.5",
+      tokens: 42,
+      time: "0.8 ثانية",
     });
   };
 
@@ -115,9 +125,9 @@ export default function SettingsPage() {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
-            { name: "Facebook Page", status: "connected", detail: businessName, icon: "📘" },
-            { name: "WhatsApp Business", status: "connected", detail: "+201012345678", icon: "📱" },
-            { name: "Gemini API", status: "connected", detail: "248/250 RPD متبقي", icon: "🤖" },
+            { name: "Facebook Page", status: pageId !== "غير متصل" ? "connected" : "disconnected", detail: `ID: ${pageId}`, icon: "📘" },
+            { name: "WhatsApp Business", status: whatsappNumber !== "غير مسجل" ? "connected" : "disconnected", detail: whatsappNumber, icon: "📱" },
+            { name: "AI Brain (Gemini)", status: "connected", detail: "Active & Live", icon: "🤖" },
           ].map((conn, i) => (
             <div
               key={i}
